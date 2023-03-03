@@ -1,0 +1,203 @@
+@include tablet {
+    .contenedor-anuncios {
+        
+        @include grid(3, 2rem);
+        margin: auto;
+    }
+}
+
+.anuncio {
+    background-color: lighten($gris, 5);
+    border: 1px solid darken($gris, 10);
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    
+
+    .contenido-anuncio {
+        padding: 1rem;
+    }
+
+    h3{
+        margin: 0;   
+    } p {
+        margin: 0;
+        text-align: justify;
+    }
+ 
+    
+
+    .img1, .img2{
+
+        height: 30rem;
+
+    }
+ 
+}
+.precio {
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
+.iconos-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    max-width: 22rem;
+
+
+    li {
+        display: block;
+
+        img {
+          margin: auto;
+        }
+        p {
+            font-weight: $black;
+            margin: auto;
+        }
+    }
+}
+.productos{
+
+  
+
+    @include telefono{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 3rem 3rem 3rem 3rem;
+        gap: 3rem;
+    }
+    
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 3rem 3rem 3rem 3rem;
+        gap: 4rem;
+    }
+   
+
+    h2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    img{
+    
+       height: 50%;
+            width: 75%;
+            margin: auto;
+           
+        
+    }
+}
+
+.category{
+    border: 1px solid darken($gris, 10);
+    width: auto;
+    height: 35rem;
+}
+
+.slider{
+    display: grid;
+   grid-template-columns: repeat(1fr, 7fr, 1fr);
+    width: 95%;
+    margin: auto;
+    max-height: 32rem;
+    overflow: hidden ;
+    position: relative;
+   
+    //box-shadow: 0 0 0 2px #fff, 0 15px 50px;
+
+}
+
+
+.slider_section{
+
+  
+   display: flex;
+   max-width: 50rem;
+   max-height: 55rem;
+  
+  
+}
+
+
+.section_img{
+    display: flex;
+    width: 100%;
+    
+}
+
+
+.img1{
+    width: 100%;
+}
+.slider_btn{
+    position: absolute;
+    display: flex;
+}
+
+.btn-right{
+    right: 10px;
+}
+.btn-left{
+
+    left: 10px
+}
+
+
+.search{
+
+    @include telefono{
+        width: 50%;
+    }
+    h2{
+        text-align: left;
+        font-size: 2rem;  
+        margin-bottom: 5px;
+    }
+        text-align: left;
+        margin-left: 0;
+        font-size: 1.5rem;
+        width: 100%;
+
+        .form-search{
+            padding: 1rem;
+            margin-bottom: 3rem;
+            label{
+                margin: 2rem;
+                
+            }
+
+            select{
+                width: 50%;
+            }
+            input{
+                margin: 2rem;
+                padding: 2rem;
+                background-color: $gris;
+                border: none;
+            }
+            
+        }
+
+}
+.what{
+    
+    text-align: center;
+    display: flex;
+    font-size: 2.5rem;
+    align-items: center;
+}
+
+.btn-what{
+    width: 50%;
+}
+
+.img-art{
+    max-width: 90%;
+    max-height: 70%;
+}

@@ -1,0 +1,63 @@
+.form_crear_producto{
+margin-bottom: 2rem;
+    
+    @include tablet{
+        width: 70%;
+        margin: auto;
+    }
+
+    input{
+        width: 100%;
+        border: none;
+        background-color: $gris;
+        padding: 1.5rem;
+    }
+    legend{
+        font-family: $fuente_principal;
+        font-weight: bold; 
+    }
+    label{
+        width: 50%;
+        font-family: $fuente_principal;
+        font-weight: bold;
+        text-align: center;
+
+    }
+    textarea{
+        width: 100%;
+        background-color: $gris;
+        border: none;
+        height: 15rem;
+    }
+    option{
+        background-color: $gris;
+    }
+    .boton_producto{
+        background-color: #af170f;
+        margin-top: 2rem;
+        color: $blanco;
+        font-weight: bold;
+
+        cursor: pointer;
+        
+    }
+
+}
+
+.alerta {
+    padding: .5rem;
+    text-align: center;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: $blanco;
+    margin: 2rem 0;
+    width: 80%;
+    margin: auto;
+    &.error {
+        background-color: #af170f;
+    }
+    &.exito {
+        background-color: rgb(69, 189, 69);
+    }
+}
+

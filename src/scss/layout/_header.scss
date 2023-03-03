@@ -1,0 +1,51 @@
+ .inicio {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../build/img/fondo1.png);
+    filter: grayscale(100%);
+}
+.fondo{
+
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../build/img/fondo1.png);
+
+    @include tablet{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../../build/img/ultimo3.png);
+        background-position: center center;
+        background-size: cover;
+    }
+    
+}
+
+
+
+.header {
+    background-color: $amarillo;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 40rem;
+        }
+
+        .contenido-header {
+            @include tablet {
+                min-height: 40rem;
+            }
+        }
+    }
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        max-width: 45rem;
+    }
+}
